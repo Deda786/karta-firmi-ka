@@ -1,0 +1,75 @@
+body {
+    background-color: #0a0c1b;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Celá karta */
+.card {
+    background-color: #1c1938;
+    width: 900px;
+    display: flex;
+}
+
+/* Textová část */
+.text {
+    padding: 40px;
+    width: 50%;
+}
+
+.text span {
+    color: violet;
+}
+
+.text p {
+    color: lightgray;
+}
+
+/* Statistiky */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Obrázek */
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*MOBIL*/
+@media (max-width:768px){
+
+.card {
+flex-direction: column;
+max-width: 330px;
+text-align: center;
+}
+.card-imageb{
+order: -1;
+height: 240px;
+}
+.card-component {
+padding: 2rem;
+}
+.card-content h1 {
+font-size: 1.8rem;
+}
+.card-content > p {
+    margin: 1.5rem auto 2.5rem;
+}
+.stats{
+    flex-direction: column;
+    gap:1.5rem
+}
+}
